@@ -17,7 +17,7 @@ using static Nuke.Common.Tools.DotNet.DotNetTasks;
 
 [CheckBuildProjectConfigurations]
 [ShutdownDotNetAfterServerBuild]
-[GitHubActions("",
+[GitHubActions("basic-gate",
     GitHubActionsImage.WindowsLatest, 
     GitHubActionsImage.UbuntuLatest,
     GitHubActionsImage.MacOsLatest,
