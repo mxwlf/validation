@@ -19,8 +19,8 @@ name: basic-gate
 on:
   push:
     branches:
-      - Clean
-      - Compile
+      - main
+      - develop
 
 jobs:
   windows-latest:

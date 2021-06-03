@@ -21,7 +21,7 @@ using static Nuke.Common.Tools.DotNet.DotNetTasks;
     GitHubActionsImage.WindowsLatest, 
     GitHubActionsImage.UbuntuLatest,
     GitHubActionsImage.MacOsLatest,
-    OnPushBranches = new []{"Clean", "Compile"}
+    OnPushBranches = new []{"main", "develop"}
 )]
 class Build : NukeBuild
 {
@@ -77,6 +77,4 @@ class Build : NukeBuild
                 .SetConfiguration(Configuration)
                 .SetOutputDirectory(ArtifactsDirectory));
         });
-    
-    
 }
