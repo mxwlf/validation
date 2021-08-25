@@ -19,6 +19,12 @@ namespace mxwlf.validation
             return @object.Value;
         }
 
+        public static string ThrowIfStringIsEmpty(this string argumentValue, string argumentName = null,
+            string message = null)
+        {
+            return ThrowIfNullEmptyOrWhiteSpace(argumentValue, argumentName, message);
+        }
+
         public static string ThrowIfNullEmptyOrWhiteSpace(this string argumentValue, string argumentName = null, string message = null)
         {
             if(string.IsNullOrEmpty(argumentValue?.Trim()))
