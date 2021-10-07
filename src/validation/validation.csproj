@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net5.0;netcoreapp3.1;netstandard2.1</TargetFrameworks>
+        <AssemblyName>mxwlf.net.Validation</AssemblyName>
+        <RootNamespace>mxwlf.net.Validation</RootNamespace>
+    </PropertyGroup>
+
+</Project>
